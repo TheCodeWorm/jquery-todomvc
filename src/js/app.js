@@ -149,7 +149,7 @@ jQuery(function ($) {
 			});
 
 			$input.val('');
-
+			
 			this.render();
 		},
 		toggle: function (e) {
