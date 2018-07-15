@@ -1,22 +1,16 @@
 {
-  "name": "jquery-todomvc",
-  "version": "1.0.0",
-  "description": "1. npm install 2. live-server src",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheCodeWorm/jquery-todomvc.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/TheCodeWorm/jquery-todomvc/issues"
-  },
-  "homepage": "https://github.com/TheCodeWorm/jquery-todomvc#readme",
+  "name": "react-employee-login",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "live-server": "^1.2.0"
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
