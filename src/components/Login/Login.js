@@ -1,4 +1,5 @@
 import React from 'react';
+import './Login.css';
 
 class Login extends React.Component {
   constructor(props) {
@@ -40,38 +41,38 @@ class Login extends React.Component {
     return (
       <article className="">
         <main className="">
-          <div className="">
-            <fieldset id="" className="">
-              <legend className="">Employee Portal</legend>
-              <div className="">
-                <label className="">Email</label>
+          <div className="outerField">
+            <fieldset id="" className="fieldArea">
+              <legend>Employee Portal</legend>
+              <div className= "loginArea">
+                <div className="loginInputLabel">Email</div>
+                <label className=""></label>
                 <input
-                  className=""
+                  className="loginInput"
                   type="email"
                   name="email-address"
                   id="email-address"
                   onChange={this.onEmailChange}
                 />
-              </div>
-              <div className="">
-                <label className="" htmlFor="password">Password</label>
+                <div className="loginInputLabel">Password</div>
+                <label className="" htmlFor="password"></label>
                 <input
-                  className=""
+                  className="loginInput"
                   type="password"
                   name="password"
                   id="password"
                   onChange={this.onPasswordChange}
                 />
+                <div>
+                  <input
+                    className="loginButton"
+                    onClick={this.onSubmitLogin}
+                    type="submit"
+                    value="Log in"
+                  />
+                </div>
               </div>
             </fieldset>
-            <div className="">
-              <input
-                onClick={this.onSubmitLogin}
-                className=""
-                type="submit"
-                value="Log in"
-              />
-            </div>
           </div>
         </main>
       </article>
