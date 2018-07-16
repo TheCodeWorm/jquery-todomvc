@@ -34,9 +34,7 @@ class App extends Component {
   onRouteChange = (route) => {
     if (route === 'logout') {
       this.setState({isLoggedIn: false})
-    } else if (route === 'home') {
-      this.setState({isLoggedIn: true})
-    }
+    } 
     this.setState({route: route});
   }
 
@@ -44,14 +42,9 @@ class App extends Component {
     const { isLoggedIn, route } = this.state;
     return (
       <div className="App">
-        { route === 'home'
-          ? <div>
-            </div>
-          : (
-             route === 'login'
-             ? <Login loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-             : <div></div>
-            )
+        { isLoggedIn === false
+          ? <Login loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+          : <div>Employee Training</div>
         }
       </div>
     );
