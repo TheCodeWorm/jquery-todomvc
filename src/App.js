@@ -7,7 +7,7 @@ class App extends Component {
     super();
     this.state = {
       input: '',
-      route: 'login',
+      route: 'Login',
       isLoggedIn: false,
       user: {
         id: '',
@@ -39,12 +39,20 @@ class App extends Component {
   }
 
   render() {
-    const { isLoggedIn, route } = this.state;
+    const { isLoggedIn, route, user } = this.state;
     return (
       <div className="App">
-        { isLoggedIn === false
-          ? <Login loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-          : <div>Employee Training</div>
+        { route === 'Login' || isLoggedIn === false
+          ? <div>
+              <Login loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+            </div>
+          : ( route === 'home'
+              ?  <div>
+			             <div>Employee Training</div>
+			             <div>{ user.name } logged in.</div>
+		             </div>
+		           : <div></div>
+            )
         }
       </div>
     );
