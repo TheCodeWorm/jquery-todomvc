@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Navigation from './components/Navigation/Navigation';
 import Login from './components/Login/Login';
-import Register from './components/Register/Register';
 import './App.css';
 
 class App extends Component {
@@ -46,14 +44,13 @@ class App extends Component {
     const { isLoggedIn, route } = this.state;
     return (
       <div className="App">
-        <Navigation isLoggedIn={isLoggedIn} onRouteChange={this.onRouteChange} />
         { route === 'home'
           ? <div>
             </div>
           : (
              route === 'login'
              ? <Login loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-             : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+             : <div></div>
             )
         }
       </div>
