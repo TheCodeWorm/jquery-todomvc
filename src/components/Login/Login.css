@@ -1,3 +1,15 @@
+.legendArea {
+	padding: 10px;
+	background-color: #545454;
+	border-radius: 12px;
+	color: #efefef;
+}
+
+.loginInputLabel {
+  padding: 10px;
+  color: #efefef;
+}
+
 .outerField {
 	padding-top: 100px;
 }
@@ -5,11 +17,14 @@
 .fieldArea {
 	width: 300px;
 	margin: auto;
+	background-color: #545454;
+	opacity: 0.9;
 }
 
 .loginArea {
 	padding: 25px 0px 25px 0px;
 	margin: 25px 0px 25px 0px;
+	border-radius: 12px;
 }
 
 .loginButton {

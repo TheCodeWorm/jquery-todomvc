@@ -43,7 +43,7 @@ class Login extends React.Component {
         <main className="">
           <div className="outerField">
             <fieldset id="" className="fieldArea">
-              <legend>Employee Portal</legend>
+              <legend class="legendArea">Employee Portal</legend>
               <div className= "loginArea">
                 <div className="loginInputLabel">Email</div>
                 <label className=""></label>
