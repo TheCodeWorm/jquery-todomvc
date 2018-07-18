@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Login from './components/Login/Login';
 import './App.css';
+import { credentials} from './Test-Credentials';
 
 class App extends Component {
   constructor() {
